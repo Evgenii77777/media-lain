@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header header--main">
+        <div class="header__box-search box">
+          <div class="header menu__header box--row section header--search">
+            <a class="header__logo header__logo--centered" href="/"
+              ><img src="./assets/logo.png" alt="logo"
+            /></a>
+            <div class="box--row header__box" id="search-close">
+              <button class="burger">
+                <span></span>
+                <span></span>
+              </button>
+              <span class="header__menu-name">Закрыть</span>
+            </div>
+          </div>
+          <div class="search__wrap">
+            <input
+              class="search__input"
+              type="search"
+              name="script"
+              id="search"
+              placeholder="Поиск"
+            />
+          </div>
+        </div>
+        <div class="menu box">
+          <div class="header menu__header box--row section">
+            <div class="box--row header__box burger__box">
+              <button class="burger" id="burger-close">
+                <span></span>
+                <span></span>
+              </button>
+              <span class="header__menu-name">Закрыть</span>
+            </div>
+            <a class="header__logo header__logo--centered" href="/"
+              ><img src="./assets/logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="menu__box box--row">
+            <img id="static-image" src="./assets/menu-img/menu-1.jpg" alt="menu-1" />
+            <nav class="nav">
+              <ul class="nav__list box">
+                <li class="menu-item" data-image="./assets/menu-img/menu-2.jpg">
+                  <a href="#"> о проекте</a>
+                </li>
+                <li class="menu-item" data-image="./assets/menu-img/menu-3.jpg">
+                  <a href="#">Коллекции</a>
+                </li>
+                <li class="menu-item" data-image="./assets/menu-img/menu-4.jpg">
+                  <a href="#">Проекты</a>
+                </li>
+                <li class="menu-item" data-image="./assets/menu-img/menu-5.jpg">
+                  <a href="#">Новости и события</a>
+                </li>
+                <li class="menu-item" data-image="./assets/menu-img/menu-6.jpg">
+                  <a href="#"> галерея</a>
+                </li>
+                <li class="menu-item" data-image="./assets/menu-img/menu-7.jpg">
+                  <a href="#">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="section section--menu">
+            <div class="menu__wrap box--row">
+              <a href="tel:+375172333333">+375 17 233 33 33</a
+              ><a href="#">д. Боровая 7, Минский р-н, 223053</a>
+              <div class="box--row box__link">
+                <a href="#"
+                  ><svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.2628 7.72807C22.1583 7.72464 23.0538 7.73364 23.9491 7.75507L24.1872 7.76366C24.4621 7.77348 24.7333 7.78575 25.061 7.80048C26.3667 7.86184 27.2576 8.06801 28.0394 8.37112C28.8493 8.68283 29.5316 9.10499 30.214 9.78731C30.8378 10.4004 31.3207 11.1421 31.6289 11.9607C31.932 12.7424 32.1382 13.6346 32.1996 14.9403C32.2143 15.2668 32.2266 15.5392 32.2364 15.8141L32.2438 16.0522C32.2656 16.947 32.275 17.8422 32.272 18.7373L32.2732 19.6528V21.2604C32.2762 22.1559 32.2668 23.0515 32.245 23.9467L32.2376 24.1848C32.2278 24.4597 32.2155 24.7309 32.2008 25.0586C32.1394 26.3643 31.9308 27.2553 31.6289 28.037C31.3217 28.8565 30.8387 29.5987 30.214 30.2116C29.6003 30.8354 28.8583 31.3182 28.0394 31.6265C27.2576 31.9297 26.3667 32.1358 25.061 32.1972C24.7333 32.2119 24.4621 32.2242 24.1872 32.234L23.9491 32.2414C23.0538 32.2632 22.1583 32.2726 21.2628 32.2696L20.3473 32.2708H18.7409C17.8453 32.2739 16.9498 32.2644 16.0545 32.2426L15.8165 32.2352C15.5251 32.2247 15.2339 32.2124 14.9427 32.1984C13.637 32.1371 12.746 31.9284 11.9631 31.6265C11.1441 31.3189 10.4024 30.836 9.78969 30.2116C9.1651 29.5983 8.68181 28.8562 8.3735 28.037C8.07039 27.2553 7.86422 26.3643 7.80286 25.0586C7.78919 24.7674 7.77692 24.4761 7.76604 24.1848L7.7599 23.9467C7.73728 23.0515 7.72705 22.1559 7.72922 21.2604V18.7373C7.7258 17.8422 7.7348 16.947 7.75622 16.0522L7.76481 15.8141C7.77463 15.5392 7.7869 15.2668 7.80163 14.9403C7.86299 13.6334 8.06916 12.7436 8.37228 11.9607C8.68076 11.1417 9.165 10.4002 9.79092 9.78854C10.4032 9.16359 11.1445 8.67985 11.9631 8.37112C12.746 8.06801 13.6357 7.86184 14.9427 7.80048L15.8165 7.76366L16.0545 7.75753C16.9494 7.73491 17.8445 7.72468 18.7397 7.72685L21.2628 7.72807ZM20.0012 13.8641C19.1882 13.8526 18.381 14.0028 17.6266 14.3059C16.8721 14.6091 16.1854 15.0592 15.6064 15.6301C15.0274 16.2009 14.5677 16.8812 14.2539 17.6313C13.94 18.3814 13.7784 19.1864 13.7784 19.9994C13.7784 20.8125 13.94 21.6175 14.2539 22.3676C14.5677 23.1177 15.0274 23.798 15.6064 24.3688C16.1854 24.9397 16.8721 25.3898 17.6266 25.693C18.381 25.9961 19.1882 26.1463 20.0012 26.1348C21.6286 26.1348 23.1893 25.4884 24.34 24.3376C25.4907 23.1869 26.1372 21.6262 26.1372 19.9988C26.1372 18.3715 25.4907 16.8108 24.34 15.66C23.1893 14.5093 21.6286 13.8641 20.0012 13.8641ZM20.0012 16.3185C20.4903 16.3095 20.9762 16.398 21.4307 16.5789C21.8851 16.7598 22.2989 17.0294 22.648 17.3721C22.9971 17.7147 23.2744 18.1235 23.4637 18.5745C23.653 19.0255 23.7506 19.5097 23.7506 19.9988C23.7507 20.488 23.6533 20.9722 23.4642 21.4233C23.275 21.8743 22.9978 22.2832 22.6489 22.6259C22.2999 22.9687 21.8862 23.2385 21.4318 23.4195C20.9774 23.6006 20.4915 23.6893 20.0024 23.6804C19.026 23.6804 18.0896 23.2926 17.3992 22.6021C16.7087 21.9117 16.3208 20.9753 16.3208 19.9988C16.3208 19.0224 16.7087 18.086 17.3992 17.3956C18.0896 16.7051 19.026 16.3172 20.0024 16.3172L20.0012 16.3185ZM26.444 12.0233C26.0481 12.0391 25.6737 12.2075 25.3992 12.4933C25.1247 12.779 24.9714 13.1598 24.9714 13.556C24.9714 13.9523 25.1247 14.3331 25.3992 14.6188C25.6737 14.9045 26.0481 15.073 26.444 15.0888C26.8509 15.0888 27.241 14.9272 27.5287 14.6395C27.8164 14.3518 27.978 13.9617 27.978 13.5548C27.978 13.148 27.8164 12.7578 27.5287 12.4701C27.241 12.1824 26.8509 12.0208 26.444 12.0208V12.0233Z"
+                      fill="#F6F5F8"
+                    />
+                  </svg>
+                </a>
+                <a href="#"
+                  ><svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.0418 24.4365L24.7209 19.9978L17.0418 15.559V24.4365ZM34.1459 12.8513C34.3382 13.5467 34.4714 14.4789 34.5602 15.6626C34.6638 16.8462 34.7081 17.8672 34.7081 18.7549L34.7969 19.9978C34.7969 23.2381 34.5602 25.6202 34.1459 27.1442C33.776 28.4758 32.9178 29.334 31.5862 29.7039C30.8908 29.8962 29.6183 30.0294 27.6653 30.1182C25.7418 30.2217 23.9811 30.2661 22.3535 30.2661L20.001 30.3549C13.8015 30.3549 9.93977 30.1182 8.41579 29.7039C7.08416 29.334 6.226 28.4758 5.8561 27.1442C5.66375 26.4488 5.53059 25.5166 5.44181 24.333C5.33824 23.1493 5.29385 22.1284 5.29385 21.2406L5.20508 19.9978C5.20508 16.7575 5.44181 14.3753 5.8561 12.8513C6.226 11.5197 7.08416 10.6615 8.41579 10.2916C9.1112 10.0993 10.3837 9.96613 12.3367 9.87736C14.2602 9.77379 16.0209 9.7294 17.6484 9.7294L20.001 9.64062C26.2005 9.64062 30.0622 9.87736 31.5862 10.2916C32.9178 10.6615 33.776 11.5197 34.1459 12.8513Z"
+                      fill="#F6F5F8"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box--row section header__wrap">
+          <div class="box--row header__box burger__box">
+            <button class="burger" id="burger-menu">
+              <span></span>
+              <span></span>
+            </button>
+            <span class="header__menu-name">Меню</span>
+          </div>
+
+          <a class="header__logo" href="/"><img src="./assets/logo.png" alt="logo" /></a>
+          <button class="header__search-btn box--row">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.4438 16.9438L21.0001 21.5001M18.75 11.375C18.75 15.7242 15.2242 19.25 10.875 19.25C6.52576 19.25 3 15.7242 3 11.375C3 7.02576 6.52576 3.5 10.875 3.5C15.2242 3.5 18.75 7.02576 18.75 11.375Z"
+                stroke="#F6F5F8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Поиск</span>
+          </button>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="section hero__section">
+          <div class="box hero__box">
+            <h1 class="hero__title">создаем среду – меняем мышление</h1>
+            <p class="hero__desc">
+              Вклад Группы компаний «А-100» в культуру и искусство Беларуси
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <main class="main">
+      <section class="layout">
+        <h2 class="layout__title">
+          «А-100 ART» – это вклад Группы компаний «А-100» в культуру и искусство Беларуси
+        </h2>
+        <div class="overlay"></div>
+        <img src="./assets/bg-black.png" class="image" alt="image" />
+      </section>
+      <section class="slider-box">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box--row">
+              <img src="./assets/slide-1.jpg" alt="slide-1" />
+              <div class="slider box">
+                <p class="slider__descr">Ключевые точки проекта «А-100 ART»</p>
+                <h2 class="title">Развитие современного искусства в Беларуси</h2>
+              </div>
+            </div>
+            <div class="swiper-slide box--row">
+              <img src="./assets/slide-2.jpg" alt="slide-2" />
+              <div class="slider box">
+                <p class="slider__descr">Ключевые точки проекта «А-100 ART»</p>
+                <h2 class="title">Формирование городской идентичности Минска</h2>
+              </div>
+            </div>
+            <div class="swiper-slide box--row">
+              <img src="./assets/slide-3.jpg" alt="slide-3" />
+              <div class="slider box">
+                <p class="slider__descr">Ключевые точки проекта «А-100 ART»</p>
+                <h2 class="title">Развитие динамичного городского сообщества</h2>
+              </div>
+            </div>
+            <div class="swiper-slide box--row">
+              <img src="./assets/slide-4.jpg" alt="slide-4" />
+              <div class="slider box">
+                <p class="slider__descr">Ключевые точки проекта «А-100 ART»</p>
+                <h2 class="title">Вклад в уровень жизни жителей районов и кварталов</h2>
+              </div>
+            </div>
+          </div>
+          <div class="slider__wrapper box--row">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        breakpoints: {
+          1280: {
+            autoplay: {
+              delay: 2000,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
