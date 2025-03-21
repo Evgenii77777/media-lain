@@ -204,6 +204,7 @@
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {
+        loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -212,14 +213,22 @@
           el: ".swiper-pagination",
           type: "fraction",
         },
-        breakpoints: {
-          1280: {
-            autoplay: {
-              delay: 2000,
-            },
-          },
-        },
+        autoplay:
+          window.innerWidth >= 1280
+            ? { delay: 2000, disableOnInteraction: false }
+            : false,
       });
+
+      function updateAutoplay() {
+        if (window.innerWidth >= 1280) {
+          swiper.params.autoplay = { delay: 2000, disableOnInteraction: false };
+          swiper.autoplay.start();
+        } else {
+          swiper.autoplay.stop();
+        }
+      }
+
+      window.addEventListener("resize", updateAutoplay);
     </script>
   </body>
 </html>
