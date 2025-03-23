@@ -793,4 +793,8 @@ input[type="search"]::-webkit-search-cancel-button {
   .image {
     max-width: 296px;
   }
+  .header,
+  .header__box-search {
+    border-bottom: 1px solid #7b7c7c;
+  }
 }
